@@ -1,0 +1,40 @@
+# Simulador de Asignación de Memoria RAM 💾
+
+Un simulador gráfico e interactivo desarrollado en **C++ puro** utilizando la biblioteca **Raylib**. Este proyecto simula la gestión de memoria de un sistema operativo, aplicando conceptos teóricos como asignación contigua, algoritmos de selección y desfragmentación.
+
+**Autores:** Álvaro Matías Salazar Zapata & Diego Alejandro Sotelo Atuncar  
+**Facultad:** FISI - Ciencias de la Computación (UNMSM)
+
+---
+
+## 🌐 Ver la Simulación en Vivo (WebAssembly)
+
+No necesitas descargar ni instalar nada. El código de C++ ha sido compilado nativamente a WebAssembly para ejecutarse directamente en el navegador.
+
+👉 **[Clic aquí para abrir el Simulador Web](https://alcachofinha.github.io/simulador-memoria/)**
+
+---
+
+## ⚙️ ¿Qué hace este código?
+
+El programa permite configurar un entorno de memoria RAM y una serie de procesos dinámicos para observar en tiempo real cómo el sistema operativo los maneja. Sus características principales incluyen:
+
+* **Asignación Dinámica:** Utiliza el criterio de selección **First-Fit** (Primer Ajuste) para ubicar procesos en la RAM.
+* **Gestión de Colas de Espera:** Si un proceso no entra en la memoria, se encola bajo criterios personalizables (FIFO, Menor Tamaño o Mayor Tamaño).
+* **Desfragmentación:** Opción activable para compactar la memoria, desplazando los bloques ocupados al principio y unificando la memoria libre fragmentada.
+* **Interfaz Gráfica (GUI):** Renderizado en tiempo real a 60 FPS con Raylib, mostrando la memoria física, la cola de espera y una tabla de estados interactiva.
+
+---
+
+## 🛠️ Cómo descargar y compilar el código localmente
+
+Si deseas descargar el código fuente para modificarlo, revisar la lógica de punteros o compilarlo en tu propia máquina Windows, sigue estos simples pasos:
+
+### 1. Requisitos Previos
+* Tener instalado el compilador **MinGW (g++)** para Windows.
+* Descargar la librería [Raylib 5.0 (MinGW w64)](https://github.com/raysan5/raylib/releases/tag/5.0). Específicamente el archivo `raylib-5.0_win64_mingw-w64.zip`.
+
+### 2. Preparar el Entorno
+1. Clona este repositorio en tu computadora:
+   ```bash
+   git clone [https://github.com/alcachofinha/simulador-memoria.git](https://github.com/alcachofinha/simulador-memoria.git)
