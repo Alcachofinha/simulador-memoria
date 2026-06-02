@@ -1,38 +1,38 @@
-# Simulador de Asignación de Memoria RAM 💾
+# Simulador de Asignacion de Memoria RAM
 
-Un simulador gráfico e interactivo desarrollado en **C++ puro** utilizando la biblioteca **Raylib**. Este proyecto simula la gestión de memoria de un sistema operativo, aplicando conceptos teóricos como asignación contigua, algoritmos de selección y desfragmentación.
+Un simulador grafico e interactivo desarrollado en C++ puro utilizando la biblioteca Raylib. Este proyecto simula la gestion de memoria de un sistema operativo, aplicando conceptos teoricos como asignacion contigua, algoritmos de seleccion y desfragmentacion.
 
-**Autores:** Álvaro Matías Salazar Zapata & Diego Alejandro Sotelo Atuncar  
-**Facultad:** FISI - Ciencias de la Computación (UNMSM)
-
----
-
-## 🌐 Ver la Simulación en Vivo (WebAssembly)
-
-No necesitas descargar ni instalar nada. El código de C++ ha sido compilado nativamente a WebAssembly para ejecutarse directamente en el navegador.
-
-👉 **[Clic aquí para abrir el Simulador Web](https://alcachofinha.github.io/simulador-memoria/)**
+Autores: Alvaro Matias Salazar Zapata & Diego Alejandro Sotelo Atuncar
+Facultad: FISI - Ciencias de la Computacion (UNMSM)
 
 ---
 
-## ⚙️ ¿Qué hace este código?
+## Ver la Simulacion en Vivo (WebAssembly)
 
-El programa permite configurar un entorno de memoria RAM y una serie de procesos dinámicos para observar en tiempo real cómo el sistema operativo los maneja. Sus características principales incluyen:
+No necesitas descargar ni instalar nada. El codigo de C++ ha sido compilado nativamente a WebAssembly para ejecutarse directamente en el navegador.
 
-* **Asignación Dinámica:** Utiliza el criterio de selección **First-Fit** (Primer Ajuste) para ubicar procesos en la RAM.
-* **Gestión de Colas de Espera:** Si un proceso no entra en la memoria, se encola bajo criterios personalizables (FIFO, Menor Tamaño o Mayor Tamaño).
-* **Desfragmentación:** Opción activable para compactar la memoria, desplazando los bloques ocupados al principio y unificando la memoria libre fragmentada.
-* **Interfaz Gráfica (GUI):** Renderizado en tiempo real a 60 FPS con Raylib, mostrando la memoria física, la cola de espera y una tabla de estados interactiva.
+[Clic aqui para abrir el Simulador Web](https://alcachofinha.github.io/simulador-memoria/)
 
 ---
 
-## 🛠️ Cómo descargar y compilar el código localmente
+## Caracteristicas del Proyecto
 
-Si deseas descargar el código fuente para modificarlo, revisar la lógica de punteros o compilarlo en tu propia máquina Windows, sigue estos simples pasos:
+El programa permite configurar un entorno de memoria RAM y una serie de procesos dinamicos para observar en tiempo real como el sistema operativo los maneja. Sus caracteristicas principales incluyen:
+
+* **Asignacion Dinamica:** Utiliza el criterio de seleccion First-Fit (Primer Ajuste) para ubicar procesos en la RAM.
+* **Gestion de Colas de Espera:** Si un proceso no entra en la memoria, se encola bajo criterios personalizables (FIFO, Menor Tamano o Mayor Tamano).
+* **Desfragmentacion:** Opcion activable para compactar la memoria, desplazando los bloques ocupados al principio y unificando la memoria libre fragmentada.
+* **Interfaz Grafica (GUI):** Renderizado en tiempo real a 60 FPS con Raylib, mostrando la memoria fisica, la cola de espera y una tabla de estados interactiva.
+
+---
+
+## Instrucciones de Compilacion Local
+
+Si deseas descargar el codigo fuente para revisarlo o compilarlo en tu propia maquina Windows, sigue estos pasos:
 
 ### 1. Requisitos Previos
-* Tener instalado el compilador **MinGW (g++)** para Windows.
-* Descargar la librería [Raylib 5.0 (MinGW w64)](https://github.com/raysan5/raylib/releases/tag/5.0). Específicamente el archivo `raylib-5.0_win64_mingw-w64.zip`.
+* Tener instalado el compilador MinGW (g++) para Windows.
+* Descargar la libreria [Raylib 5.0 (MinGW w64)](https://github.com/raysan5/raylib/releases/tag/5.0). Especificamente el archivo `raylib-5.0_win64_mingw-w64.zip`.
 
 ### 2. Preparar el Entorno
 1. Clona este repositorio en tu computadora:
